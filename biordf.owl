@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#"
+     xml:base="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#hasEvent">
+        <rdfs:domain rdf:resource="http://data.biographynet.nl/rdf/PersonDes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#hasFileDes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#hasFileDes">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#hasFileDes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://data.biographynet.nl/rdf/BioDes"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#hasFileDes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyFor">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#PersonDesc"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyFor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyIn">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyFor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#PersonDesc"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyFor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#BioDesc"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Name">
+        <rdfs:domain rdf:resource="http://data.biographynet.nl/rdf/PersonDes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/BioDes -->
+
+    <owl:Class rdf:about="http://data.biographynet.nl/rdf/BioDes">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#BioDesc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person -->
+
+    <owl:Class rdf:about="http://data.biographynet.nl/rdf/Person"/>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/PersonDes -->
+
+    <owl:Class rdf:about="http://data.biographynet.nl/rdf/PersonDes">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#PersonDesc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#BioDesc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#BioDesc"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#PersonDesc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#PersonDesc"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/BioDes-44287831_01 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/BioDes-44287831_01">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/BioDes"/>
+        <hasFileDes rdf:resource="http://data.biographynet.nl/rdf/FileDes-44287831_01"/>
+        <proxyIn rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/BioDes-44287831_02 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/BioDes-44287831_02">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/BioDes"/>
+        <hasFileDes rdf:resource="http://data.biographynet.nl/rdf/FileDes-44287831_02"/>
+        <proxyIn rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/BioDes-44287831_03 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/BioDes-44287831_03">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/BioDes"/>
+        <hasFileDes rdf:resource="http://data.biographynet.nl/rdf/FileDes-44287831_03"/>
+        <proxyIn rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/BioDes-44287831_04 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/BioDes-44287831_04">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/BioDes"/>
+        <hasFileDes rdf:resource="http://data.biographynet.nl/rdf/FileDes-44287831_04"/>
+        <proxyIn rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/BioDes-44287831_05 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/BioDes-44287831_05">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/BioDes"/>
+        <hasFileDes rdf:resource="http://data.biographynet.nl/rdf/FileDes-44287831_05"/>
+        <proxyIn rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/FileDes-44287831_01 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/FileDes-44287831_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/FileDes-44287831_02 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/FileDes-44287831_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/FileDes-44287831_03 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/FileDes-44287831_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/FileDes-44287831_04 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/FileDes-44287831_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/FileDes-44287831_05 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/FileDes-44287831_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person-44287831 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/Person-44287831">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person-4448894 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/Person-4448894">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person-44750057 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/Person-44750057">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person-44772452 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/Person-44772452">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person-45382330 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/Person-45382330">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person-45455235 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/Person-45455235">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person-45475098 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/Person-45475098">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/Person-45580452 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/Person-45580452">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/PersonDes-44287831_01 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/PersonDes-44287831_01">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/PersonDes"/>
+        <hasEvent rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14636"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adriaan van den  Ende</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/PersonDes-44287831_02 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/PersonDes-44287831_02">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/PersonDes"/>
+        <hasEvent rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14655"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adriaan</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ende</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">van den</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/PersonDes-44287831_03 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/PersonDes-44287831_03">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/PersonDes"/>
+        <hasEvent rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14668"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adriaan</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ende</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ds.</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">van den</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/PersonDes-44287831_04 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/PersonDes-44287831_04">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/PersonDes"/>
+        <hasEvent rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14677"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adriaan</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ende</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">van den</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.biographynet.nl/rdf/PersonDes-44287831_05 -->
+
+    <owl:NamedIndividual rdf:about="http://data.biographynet.nl/rdf/PersonDes-44287831_05">
+        <rdf:type rdf:resource="http://data.biographynet.nl/rdf/PersonDes"/>
+        <hasEvent rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14686"/>
+        <proxyFor rdf:resource="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adriaan van den</Name>
+        <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ende</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14636 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14636">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1846</date>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14655 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14655">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1846</date>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14668 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14668">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1846-07-28</date>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14677 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14677">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1846-06-28</date>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14686 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14686">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1846-06-28</date>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">death</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

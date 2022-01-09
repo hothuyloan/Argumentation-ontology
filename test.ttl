@@ -1,0 +1,28 @@
+@prefix bgn: <http://data.biographynet.nl/rdf/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+
+bgn:BioDes-44287831_05 bgn:hasPersonDes bgn:PersonDes-44287831_05 .
+
+bgn:PersonDes-44287831_05 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:date "11 oktober 1768" ;
+            bgn:place "Delft" ;
+            bgn:type "birth" ;
+            bgn:when "1768-10-11" ],
+        [ a bgn:Event ;
+            bgn:date "28 juni 1846" ;
+            bgn:place "Warnsveld" ;
+            bgn:type "death" ;
+            bgn:when "1846-06-28" ] ;
+    bgn:idno "11526181",
+        "44287831",
+        "443924106",
+        "92709101",
+        "dbnl",
+        "ende004" ;
+    bgn:personName "Ende, Adriaan van den" ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    ore:proxyFor bgn:Person-44287831 ;
+    ore:proxyIn bgn:BioDes-44287831_05 .
+

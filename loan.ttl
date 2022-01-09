@@ -1,0 +1,29 @@
+@prefix bgn: <http://data.biographynet.nl/rdf/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+
+bgn:BioDes-4448894_07 bgn:hasPersonDes bgn:PersonDes-4448894_07 .
+
+bgn:PersonDes-4448894_07 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:date "10 oktober 1884" ;
+            bgn:place "Amsterdam" ;
+            bgn:type "birth" ;
+            bgn:when "1884-10-10" ],
+        [ a bgn:Event ;
+            bgn:date "28 april 1965" ;
+            bgn:place "Den Haag" ;
+            bgn:type "death" ;
+            bgn:when "1965-04-28" ] ;
+    bgn:idno "-1932531020",
+        "04448894",
+        "07663958",
+        "bord001",
+        "dbnl" ;
+    bgn:personName "Bordewijk, Ferdinand ",
+        "Mandeau, Emile ",
+        "Ven, Ton " ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    ore:proxyFor bgn:Person-4448894 ;
+    ore:proxyIn bgn:BioDes-4448894_07 .
+

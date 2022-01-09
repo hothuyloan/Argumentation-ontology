@@ -1,0 +1,617 @@
+{
+  "head": {
+    "vars": [
+      "biodes1",
+      "person",
+      "evt1",
+      "deathdate1",
+      "biodes2",
+      "evt2",
+      "deathdate2"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44287831_05"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-44287831"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode14686"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1846-06-28"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44287831_01"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode14636"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1846"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44287831_05"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-44287831"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode14686"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1846-06-28"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44287831_02"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode14655"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1846"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44287831_05"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-44287831"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode14686"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1846-06-28"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44287831_03"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode14668"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1846-07-28"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-4448894_07"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-4448894"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode19070"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1965-04-28"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-4448894_04"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode19037"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1965"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44750057_01"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-44750057"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode25121"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1738-01-26"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44750057_02"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode25140"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1738"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44772452_03"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-44772452"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode25607"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1872"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-44772452_01"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode25585"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1872-12-26"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45382330_03"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45382330"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode38540"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1733-02-13"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45382330_05"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode38556"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1733"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_06"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45455235"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode39898"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1839-05-08"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_01"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode39848"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1839-05-09"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_06"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45455235"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode39898"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1839-05-08"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_03"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode39864"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1839-05-01"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_06"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45455235"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode39898"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1839-05-08"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_04"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode39881"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1839-05-01"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_07"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45455235"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode39906"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1839-05-08"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_01"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode39848"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1839-05-09"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_07"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45455235"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode39906"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1839-05-08"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_03"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode39864"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1839-05-01"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_07"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45455235"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode39906"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1839-05-08"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45455235_04"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode39881"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1839-05-01"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45475098_04"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45475098"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode40245"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1888-06-21"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45475098_03"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode40237"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1888"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45580452_01"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45580452"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode43152"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1452-02-16"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45580452_02"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode43168"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1452"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45654942_09"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45654942"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode44750"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1586-05-07"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45654942_06"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode44725"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1586"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45654942_09"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-45654942"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode44750"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1586-05-07"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-45654942_07"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode44733"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1586"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-4584221_04"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-4584221"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode49685"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1966"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-4584221_01"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode49659"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1966-11-01"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-4584221_04"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-4584221"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode49685"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1966"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-4584221_06"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode49720"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1966-11-01"
+        }
+      },
+      {
+        "biodes1": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-4584221_04"
+        },
+        "person": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/Person-4584221"
+        },
+        "evt1": {
+          "type": "bnode",
+          "value": "__bnode49685"
+        },
+        "deathdate1": {
+          "type": "literal",
+          "value": "1966"
+        },
+        "biodes2": {
+          "type": "uri",
+          "value": "http://data.biographynet.nl/rdf/PersonDes-4584221_05"
+        },
+        "evt2": {
+          "type": "bnode",
+          "value": "__bnode49698"
+        },
+        "deathdate2": {
+          "type": "literal",
+          "value": "1966-11-01"
+        }
+      }
+    ]
+  }
+}

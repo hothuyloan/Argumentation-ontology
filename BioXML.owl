@@ -1,0 +1,581 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain">
+    <Prefix name="" IRI="http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://data.biographynet.nl/rdf/BioDes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BioDesc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FileDes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonDesc"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFileDes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#proxyFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#proxyIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-4448894"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44750057"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44772452"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-45382330"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-45455235"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-45475098"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-45580452"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#__bnode14636"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#__bnode14655"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#__bnode14668"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#__bnode14677"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#__bnode14686"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://data.biographynet.nl/rdf/BioDes"/>
+        <Class IRI="#BioDesc"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+        <Class IRI="#PersonDesc"/>
+    </EquivalentClasses>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/BioDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/BioDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/BioDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/BioDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/BioDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-4448894"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44750057"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44772452"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-45382330"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-45455235"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-45475098"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-45580452"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#__bnode14636"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#__bnode14655"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#__bnode14668"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#__bnode14677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#__bnode14686"/>
+    </ClassAssertion>
+    <DifferentIndividuals/>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_01"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyIn"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_01"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_02"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyIn"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_02"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_03"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyIn"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_03"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_04"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyIn"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_04"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFileDes"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_05"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/FileDes-44287831_05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyIn"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/BioDes-44287831_05"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+        <NamedIndividual IRI="#__bnode14636"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+        <NamedIndividual IRI="#__bnode14655"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+        <NamedIndividual IRI="#__bnode14668"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+        <NamedIndividual IRI="#__bnode14677"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+        <NamedIndividual IRI="#__bnode14686"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#proxyFor"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/Person-44287831"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_01"/>
+        <Literal>Adriaan van den  Ende</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+        <Literal>Adriaan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+        <Literal>Ende</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_02"/>
+        <Literal>van den</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+        <Literal>Adriaan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+        <Literal>Ende</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+        <Literal>ds.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_03"/>
+        <Literal>van den</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+        <Literal>Adriaan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+        <Literal>Ende</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_04"/>
+        <Literal>van den</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+        <Literal>Adriaan van den</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="http://data.biographynet.nl/rdf/PersonDes-44287831_05"/>
+        <Literal>Ende</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#__bnode14636"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1846</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#__bnode14636"/>
+        <Literal>death</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#__bnode14655"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1846</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#__bnode14655"/>
+        <Literal>death</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#__bnode14668"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1846-07-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#__bnode14668"/>
+        <Literal>death</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#__bnode14677"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1846-06-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#__bnode14677"/>
+        <Literal>death</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#__bnode14686"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1846-06-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#__bnode14686"/>
+        <Literal>death</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEvent"/>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFileDes"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasFileDes"/>
+            <Class IRI="http://data.biographynet.nl/rdf/BioDes"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#proxyFor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#proxyFor"/>
+            <Class IRI="#PersonDesc"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#proxyIn"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#proxyFor"/>
+            <Class IRI="#PersonDesc"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEvent"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFileDes"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasFileDes"/>
+            <Class IRI="#FileDes"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#proxyFor"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#proxyFor"/>
+            <Class IRI="http://data.biographynet.nl/rdf/Person"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#proxyIn"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#proxyFor"/>
+            <Class IRI="#BioDesc"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="http://data.biographynet.nl/rdf/PersonDes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

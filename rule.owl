@@ -1,0 +1,553 @@
+@prefix : <http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain> .
+
+<http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#hasEvent
+:hasEvent rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://data.biographynet.nl/rdf/PersonDes> ,
+                      :PersonDesc ;
+          rdfs:range :Event .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#hasFileDes
+:hasFileDes rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasFileDes ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass <http://data.biographynet.nl/rdf/BioDes>
+                        ] ;
+            rdfs:range [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasFileDes ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :FileDes
+                       ] .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyFor
+:proxyFor rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Restriction ;
+                        owl:onProperty :proxyFor ;
+                        owl:someValuesFrom :PersonDesc
+                      ] ;
+          rdfs:range [ rdf:type owl:Restriction ;
+                       owl:onProperty :proxyFor ;
+                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass <http://data.biographynet.nl/rdf/Person>
+                     ] .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#proxyIn
+:proxyIn rdf:type owl:ObjectProperty ;
+         rdfs:domain [ rdf:type owl:Restriction ;
+                       owl:onProperty :proxyFor ;
+                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                       owl:onClass :PersonDesc
+                     ] ;
+         rdfs:range [ rdf:type owl:Restriction ;
+                      owl:onProperty :proxyFor ;
+                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                      owl:onClass :BioDesc
+                    ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Name
+:Name rdf:type owl:DatatypeProperty ;
+      rdfs:domain <http://data.biographynet.nl/rdf/PersonDes> ,
+                  :PersonDesc ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#date
+:date rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Event ;
+      rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#type
+:type rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Event ;
+      rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.biographynet.nl/rdf/BioDes
+<http://data.biographynet.nl/rdf/BioDes> rdf:type owl:Class ;
+                                         owl:equivalentClass :BioDesc ;
+                                         rdfs:subClassOf :BioDesc .
+
+
+###  http://data.biographynet.nl/rdf/Person
+<http://data.biographynet.nl/rdf/Person> rdf:type owl:Class .
+
+
+###  http://data.biographynet.nl/rdf/PersonDes
+<http://data.biographynet.nl/rdf/PersonDes> rdf:type owl:Class ;
+                                            owl:equivalentClass :PersonDesc ;
+                                            rdfs:subClassOf :PersonDesc .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#BioDesc
+:BioDesc rdf:type owl:Class ;
+         rdfs:subClassOf <http://data.biographynet.nl/rdf/BioDes> .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#Event
+:Event rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#FileDes
+:FileDes rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#PersonDesc
+:PersonDesc rdf:type owl:Class ;
+            rdfs:subClassOf <http://data.biographynet.nl/rdf/PersonDes> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://data.biographynet.nl/rdf/BioDes-44287831_01
+<http://data.biographynet.nl/rdf/BioDes-44287831_01> rdf:type owl:NamedIndividual ,
+                                                              <http://data.biographynet.nl/rdf/BioDes> ,
+                                                              :BioDesc ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasFileDes ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass <http://data.biographynet.nl/rdf/BioDes>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :proxyFor ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :PersonDesc
+                                                              ] ;
+                                                     :hasFileDes <http://data.biographynet.nl/rdf/FileDes-44287831_01> ;
+                                                     :proxyIn <http://data.biographynet.nl/rdf/PersonDes-44287831_01> .
+
+
+###  http://data.biographynet.nl/rdf/BioDes-44287831_02
+<http://data.biographynet.nl/rdf/BioDes-44287831_02> rdf:type owl:NamedIndividual ,
+                                                              <http://data.biographynet.nl/rdf/BioDes> ,
+                                                              :BioDesc ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasFileDes ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass <http://data.biographynet.nl/rdf/BioDes>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :proxyFor ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :PersonDesc
+                                                              ] ;
+                                                     :hasFileDes <http://data.biographynet.nl/rdf/FileDes-44287831_02> ;
+                                                     :proxyIn <http://data.biographynet.nl/rdf/PersonDes-44287831_02> .
+
+
+###  http://data.biographynet.nl/rdf/BioDes-44287831_03
+<http://data.biographynet.nl/rdf/BioDes-44287831_03> rdf:type owl:NamedIndividual ,
+                                                              <http://data.biographynet.nl/rdf/BioDes> ,
+                                                              :BioDesc ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasFileDes ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass <http://data.biographynet.nl/rdf/BioDes>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :proxyFor ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :PersonDesc
+                                                              ] ;
+                                                     :hasFileDes <http://data.biographynet.nl/rdf/FileDes-44287831_03> ;
+                                                     :proxyIn <http://data.biographynet.nl/rdf/PersonDes-44287831_03> .
+
+
+###  http://data.biographynet.nl/rdf/BioDes-44287831_04
+<http://data.biographynet.nl/rdf/BioDes-44287831_04> rdf:type owl:NamedIndividual ,
+                                                              <http://data.biographynet.nl/rdf/BioDes> ,
+                                                              :BioDesc ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasFileDes ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass <http://data.biographynet.nl/rdf/BioDes>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :proxyFor ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :PersonDesc
+                                                              ] ;
+                                                     :hasFileDes <http://data.biographynet.nl/rdf/FileDes-44287831_04> ;
+                                                     :proxyIn <http://data.biographynet.nl/rdf/PersonDes-44287831_04> .
+
+
+###  http://data.biographynet.nl/rdf/BioDes-44287831_05
+<http://data.biographynet.nl/rdf/BioDes-44287831_05> rdf:type owl:NamedIndividual ,
+                                                              <http://data.biographynet.nl/rdf/BioDes> ,
+                                                              :BioDesc ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :hasFileDes ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass <http://data.biographynet.nl/rdf/BioDes>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :proxyFor ;
+                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :PersonDesc
+                                                              ] ;
+                                                     :hasFileDes <http://data.biographynet.nl/rdf/FileDes-44287831_05> ;
+                                                     :proxyIn <http://data.biographynet.nl/rdf/PersonDes-44287831_05> .
+
+
+###  http://data.biographynet.nl/rdf/FileDes-44287831_01
+<http://data.biographynet.nl/rdf/FileDes-44287831_01> rdf:type owl:NamedIndividual ,
+                                                               :FileDes ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :hasFileDes ;
+                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass :FileDes
+                                                               ] .
+
+
+###  http://data.biographynet.nl/rdf/FileDes-44287831_02
+<http://data.biographynet.nl/rdf/FileDes-44287831_02> rdf:type owl:NamedIndividual ,
+                                                               :FileDes ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :hasFileDes ;
+                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass :FileDes
+                                                               ] .
+
+
+###  http://data.biographynet.nl/rdf/FileDes-44287831_03
+<http://data.biographynet.nl/rdf/FileDes-44287831_03> rdf:type owl:NamedIndividual ,
+                                                               :FileDes ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :hasFileDes ;
+                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass :FileDes
+                                                               ] .
+
+
+###  http://data.biographynet.nl/rdf/FileDes-44287831_04
+<http://data.biographynet.nl/rdf/FileDes-44287831_04> rdf:type owl:NamedIndividual ,
+                                                               :FileDes ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :hasFileDes ;
+                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass :FileDes
+                                                               ] .
+
+
+###  http://data.biographynet.nl/rdf/FileDes-44287831_05
+<http://data.biographynet.nl/rdf/FileDes-44287831_05> rdf:type owl:NamedIndividual ,
+                                                               :FileDes ,
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :hasFileDes ;
+                                                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                 owl:onClass :FileDes
+                                                               ] .
+
+
+###  http://data.biographynet.nl/rdf/Person-44287831
+<http://data.biographynet.nl/rdf/Person-44287831> rdf:type owl:NamedIndividual ,
+                                                           <http://data.biographynet.nl/rdf/Person> ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :proxyFor ;
+                                                             owl:someValuesFrom :PersonDesc
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :proxyFor ;
+                                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass <http://data.biographynet.nl/rdf/Person>
+                                                           ] ;
+                                                  :proxyFor <http://data.biographynet.nl/rdf/PersonDes-44287831_01> ,
+                                                            <http://data.biographynet.nl/rdf/PersonDes-44287831_02> ,
+                                                            <http://data.biographynet.nl/rdf/PersonDes-44287831_03> ,
+                                                            <http://data.biographynet.nl/rdf/PersonDes-44287831_04> ,
+                                                            <http://data.biographynet.nl/rdf/PersonDes-44287831_05> .
+
+
+###  http://data.biographynet.nl/rdf/Person-4448894
+<http://data.biographynet.nl/rdf/Person-4448894> rdf:type owl:NamedIndividual ,
+                                                          <http://data.biographynet.nl/rdf/Person> .
+
+
+###  http://data.biographynet.nl/rdf/Person-44750057
+<http://data.biographynet.nl/rdf/Person-44750057> rdf:type owl:NamedIndividual ,
+                                                           <http://data.biographynet.nl/rdf/Person> .
+
+
+###  http://data.biographynet.nl/rdf/Person-44772452
+<http://data.biographynet.nl/rdf/Person-44772452> rdf:type owl:NamedIndividual ,
+                                                           <http://data.biographynet.nl/rdf/Person> .
+
+
+###  http://data.biographynet.nl/rdf/Person-45382330
+<http://data.biographynet.nl/rdf/Person-45382330> rdf:type owl:NamedIndividual ,
+                                                           <http://data.biographynet.nl/rdf/Person> .
+
+
+###  http://data.biographynet.nl/rdf/Person-45455235
+<http://data.biographynet.nl/rdf/Person-45455235> rdf:type owl:NamedIndividual ,
+                                                           <http://data.biographynet.nl/rdf/Person> .
+
+
+###  http://data.biographynet.nl/rdf/Person-45475098
+<http://data.biographynet.nl/rdf/Person-45475098> rdf:type owl:NamedIndividual ,
+                                                           <http://data.biographynet.nl/rdf/Person> .
+
+
+###  http://data.biographynet.nl/rdf/Person-45580452
+<http://data.biographynet.nl/rdf/Person-45580452> rdf:type owl:NamedIndividual ,
+                                                           <http://data.biographynet.nl/rdf/Person> .
+
+
+###  http://data.biographynet.nl/rdf/PersonDes-44287831_01
+<http://data.biographynet.nl/rdf/PersonDes-44287831_01> rdf:type owl:NamedIndividual ,
+                                                                 <http://data.biographynet.nl/rdf/PersonDes> ,
+                                                                 :PersonDesc ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:someValuesFrom :PersonDesc
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass <http://data.biographynet.nl/rdf/Person>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass :BioDesc
+                                                                 ] ;
+                                                        :hasEvent :__bnode14636 ;
+                                                        :proxyFor <http://data.biographynet.nl/rdf/Person-44287831> ;
+                                                        :Name "Adriaan van den  Ende"^^xsd:string .
+
+
+###  http://data.biographynet.nl/rdf/PersonDes-44287831_02
+<http://data.biographynet.nl/rdf/PersonDes-44287831_02> rdf:type owl:NamedIndividual ,
+                                                                 <http://data.biographynet.nl/rdf/PersonDes> ,
+                                                                 :PersonDesc ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:someValuesFrom :PersonDesc
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass <http://data.biographynet.nl/rdf/Person>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass :BioDesc
+                                                                 ] ;
+                                                        :hasEvent :__bnode14655 ;
+                                                        :proxyFor <http://data.biographynet.nl/rdf/Person-44287831> ;
+                                                        :Name "Adriaan"^^xsd:string ,
+                                                              "Ende"^^xsd:string ,
+                                                              "van den"^^xsd:string .
+
+
+###  http://data.biographynet.nl/rdf/PersonDes-44287831_03
+<http://data.biographynet.nl/rdf/PersonDes-44287831_03> rdf:type owl:NamedIndividual ,
+                                                                 <http://data.biographynet.nl/rdf/PersonDes> ,
+                                                                 :PersonDesc ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:someValuesFrom :PersonDesc
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass <http://data.biographynet.nl/rdf/Person>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass :BioDesc
+                                                                 ] ;
+                                                        :hasEvent :__bnode14668 ;
+                                                        :proxyFor <http://data.biographynet.nl/rdf/Person-44287831> ;
+                                                        :Name "Adriaan"^^xsd:string ,
+                                                              "Ende"^^xsd:string ,
+                                                              "ds."^^xsd:string ,
+                                                              "van den"^^xsd:string .
+
+
+###  http://data.biographynet.nl/rdf/PersonDes-44287831_04
+<http://data.biographynet.nl/rdf/PersonDes-44287831_04> rdf:type owl:NamedIndividual ,
+                                                                 <http://data.biographynet.nl/rdf/PersonDes> ,
+                                                                 :PersonDesc ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:someValuesFrom :PersonDesc
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass <http://data.biographynet.nl/rdf/Person>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass :BioDesc
+                                                                 ] ;
+                                                        :hasEvent :__bnode14677 ;
+                                                        :proxyFor <http://data.biographynet.nl/rdf/Person-44287831> ;
+                                                        :Name "Adriaan"^^xsd:string ,
+                                                              "Ende"^^xsd:string ,
+                                                              "van den"^^xsd:string .
+
+
+###  http://data.biographynet.nl/rdf/PersonDes-44287831_05
+<http://data.biographynet.nl/rdf/PersonDes-44287831_05> rdf:type owl:NamedIndividual ,
+                                                                 <http://data.biographynet.nl/rdf/PersonDes> ,
+                                                                 :PersonDesc ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:someValuesFrom :PersonDesc
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass <http://data.biographynet.nl/rdf/Person>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty :proxyFor ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onClass :BioDesc
+                                                                 ] ;
+                                                        :hasEvent :__bnode14686 ;
+                                                        :proxyFor <http://data.biographynet.nl/rdf/Person-44287831> ;
+                                                        :Name "Adriaan van den"^^xsd:string ,
+                                                              "Ende"^^xsd:string .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14636
+:__bnode14636 rdf:type owl:NamedIndividual ,
+                       :Event ;
+              :date "1846"^^xsd:dateTime ;
+              :type "death"^^xsd:string .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14655
+:__bnode14655 rdf:type owl:NamedIndividual ,
+                       :Event ;
+              :date "1846"^^xsd:dateTime ;
+              :type "death"^^xsd:string .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14668
+:__bnode14668 rdf:type owl:NamedIndividual ,
+                       :Event ;
+              :date "1846-07-28"^^xsd:dateTime ;
+              :type "death"^^xsd:string .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14677
+:__bnode14677 rdf:type owl:NamedIndividual ,
+                       :Event ;
+              :date "1846-06-28"^^xsd:dateTime ;
+              :type "death"^^xsd:string .
+
+
+###  http://www.semanticweb.org/tho310/ontologies/2021/11/BioGraphDomain#__bnode14686
+:__bnode14686 rdf:type owl:NamedIndividual ,
+                       :Event ;
+              :date "1846-06-28"^^xsd:dateTime ;
+              :type "death"^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers rdf:nil
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:y rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "Constraint"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://data.biographynet.nl/rdf/Person> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasEvent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :y
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Event ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :y
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasEvent ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :z
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#classPredicate> :Event ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :z
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#SameIndividualAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :y ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :z
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

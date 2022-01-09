@@ -1,0 +1,362 @@
+@prefix bgn: <http://data.biographynet.nl/rdf/> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+bgn:BioDes-44287831_01 bgn:hasPersonDes bgn:PersonDes-44287831_01 .
+
+bgn:BioDes-44287831_02 bgn:hasPersonDes bgn:PersonDes-44287831_02 .
+
+bgn:BioDes-44287831_03 bgn:hasPersonDes bgn:PersonDes-44287831_03 .
+
+bgn:BioDes-44287831_05 bgn:hasPersonDes bgn:PersonDes-44287831_05 .
+
+bgn:BioDes-4448894_04 bgn:hasPersonDes bgn:PersonDes-4448894_04 .
+
+bgn:BioDes-4448894_07 bgn:hasPersonDes bgn:PersonDes-4448894_07 .
+
+bgn:BioDes-44750057_01 bgn:hasPersonDes bgn:PersonDes-44750057_01 .
+
+bgn:BioDes-44750057_02 bgn:hasPersonDes bgn:PersonDes-44750057_02 .
+
+bgn:BioDes-45455235_01 bgn:hasPersonDes bgn:PersonDes-45455235_01 .
+
+bgn:BioDes-45455235_03 bgn:hasPersonDes bgn:PersonDes-45455235_03 .
+
+bgn:BioDes-45455235_04 bgn:hasPersonDes bgn:PersonDes-45455235_04 .
+
+bgn:BioDes-45455235_06 bgn:hasPersonDes bgn:PersonDes-45455235_06 .
+
+bgn:PersonDes-44287831_01 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:place "Delft" ;
+            bgn:type "birth" ;
+            bgn:when "1768-10-11" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "funeral" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "baptism" ],
+        [ a bgn:Event ;
+            bgn:place "Warnsveld" ;
+            bgn:type "death" ;
+            bgn:when "1846" ] ;
+    bgn:idno "44287831",
+        "bioport" ;
+    bgn:personName "Adriaan van den  Ende" ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    bgn:state [ a bgn:State ;
+            bgn:idno bgn:FileDes-73863490_01 ;
+            bgn:type "religion" ],
+        [ a bgn:State ;
+            bgn:idno "11" ;
+            bgn:type "category" ;
+            rdf:value "Politiek en bestuur" ],
+        [ a bgn:State ;
+            bgn:from bgn:FileDes-73863490_01 ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:to bgn:FileDes-73863490_01 ;
+            bgn:type "floruit" ],
+        [ a bgn:State ;
+            bgn:idno "10" ;
+            bgn:type "category" ;
+            rdf:value "Onderwijs & wetenschappen" ] ;
+    ore:proxyFor bgn:Person-44287831 ;
+    ore:proxyIn bgn:BioDes-44287831_01 .
+
+bgn:PersonDes-44287831_02 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:place "Warnsveld" ;
+            bgn:type "death" ;
+            bgn:when "1846" ],
+        [ a bgn:Event ;
+            bgn:place "Delft" ;
+            bgn:type "birth" ;
+            bgn:when "1768-10-11" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "funeral" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "baptism" ] ;
+    bgn:idno "11526181",
+        "44287831",
+        "75430569",
+        "92709101",
+        "bioport",
+        "bioport/75430569" ;
+    bgn:personName [ a bgn:PersName ;
+            bgn:name "Adriaan",
+                "Ende",
+                "van den " ;
+            rdf:value " " ] ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    bgn:state [ a bgn:State ;
+            bgn:from bgn:FileDes-73863490_01 ;
+            bgn:to bgn:FileDes-73863490_01 ;
+            bgn:type "floruit" ],
+        [ a bgn:State ;
+            bgn:idno "10" ;
+            bgn:type "category" ;
+            rdf:value "Onderwijs & wetenschappen" ] ;
+    ore:proxyFor bgn:Person-44287831 ;
+    ore:proxyIn bgn:BioDes-44287831_02 .
+
+bgn:PersonDes-44287831_03 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:place "Warnsveld" ;
+            bgn:type "death" ;
+            bgn:when "1846-07-28" ],
+        [ a bgn:Event ;
+            bgn:place "Delft" ;
+            bgn:type "birth" ;
+            bgn:when "1768-10-11" ] ;
+    bgn:idno "44287831",
+        "raa",
+        "raa/11361.xml" ;
+    bgn:personName [ a bgn:PersName ;
+            bgn:name "Adriaan",
+                "Ende",
+                "ds.",
+                "van den" ;
+            rdf:value " " ] ;
+    ore:proxyFor bgn:Person-44287831 ;
+    ore:proxyIn bgn:BioDes-44287831_03 .
+
+bgn:PersonDes-44287831_05 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:date "11 oktober 1768" ;
+            bgn:place "Delft" ;
+            bgn:type "birth" ;
+            bgn:when "1768-10-11" ],
+        [ a bgn:Event ;
+            bgn:date "28 juni 1846" ;
+            bgn:place "Warnsveld" ;
+            bgn:type "death" ;
+            bgn:when "1846-06-28" ] ;
+    bgn:idno "11526181",
+        "44287831",
+        "443924106",
+        "92709101",
+        "dbnl",
+        "ende004" ;
+    bgn:personName "Ende, Adriaan van den" ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    ore:proxyFor bgn:Person-44287831 ;
+    ore:proxyIn bgn:BioDes-44287831_05 .
+
+bgn:PersonDes-4448894_04 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:type "birth" ;
+            bgn:when "1884" ],
+        [ a bgn:Event ;
+            bgn:type "death" ;
+            bgn:when "1965" ] ;
+    bgn:idno "borderwijk_3",
+        "bwn" ;
+    bgn:personName [ a bgn:PersName ;
+            bgn:name "Bordewijk" ;
+            rdf:value ", Ferdinand Johan Wilhelm Christiaan Karel Emil" ] ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    bgn:state [ a bgn:State ;
+            bgn:type "occupation" ;
+            rdf:value "schrijver" ],
+        [ a bgn:State ;
+            bgn:type "occupation" ;
+            rdf:value "jurist" ] ;
+    ore:proxyFor bgn:Person-4448894 ;
+    ore:proxyIn bgn:BioDes-4448894_04 .
+
+bgn:PersonDes-4448894_07 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:date "28 april 1965" ;
+            bgn:place "Den Haag" ;
+            bgn:type "death" ;
+            bgn:when "1965-04-28" ],
+        [ a bgn:Event ;
+            bgn:date "10 oktober 1884" ;
+            bgn:place "Amsterdam" ;
+            bgn:type "birth" ;
+            bgn:when "1884-10-10" ] ;
+    bgn:idno "-1932531020",
+        "04448894",
+        "07663958",
+        "bord001",
+        "dbnl" ;
+    bgn:personName "Bordewijk, Ferdinand ",
+        "Mandeau, Emile ",
+        "Ven, Ton " ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    ore:proxyFor bgn:Person-4448894 ;
+    ore:proxyIn bgn:BioDes-4448894_07 .
+
+bgn:PersonDes-44750057_01 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "baptism" ],
+        [ a bgn:Event ;
+            bgn:place "Hontenisse" ;
+            bgn:type "birth" ;
+            bgn:when "1709-10-31" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "funeral" ],
+        [ a bgn:Event ;
+            bgn:place "Batavia, Nederlands Indië" ;
+            bgn:type "death" ;
+            bgn:when "1738-01-26" ] ;
+    bgn:idno "44750057",
+        "bioport" ;
+    bgn:personName "Maria Schreuder",
+        "Maria Wilhelmina Lammens" ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    bgn:state [ a bgn:State ;
+            bgn:idno "5" ;
+            bgn:type "category" ;
+            rdf:value "Koloniale en overzeese betrekkingen en handel" ],
+        [ a bgn:State ;
+            bgn:from bgn:FileDes-73863490_01 ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:to bgn:FileDes-73863490_01 ;
+            bgn:type "floruit" ],
+        [ a bgn:State ;
+            bgn:idno bgn:FileDes-73863490_01 ;
+            bgn:type "religion" ] ;
+    ore:proxyFor bgn:Person-44750057 ;
+    ore:proxyIn bgn:BioDes-44750057_01 .
+
+bgn:PersonDes-44750057_02 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:type "birth" ;
+            bgn:when "1709" ],
+        [ a bgn:Event ;
+            bgn:type "death" ;
+            bgn:when "1738" ] ;
+    bgn:idno "LemmaJS",
+        "dvn" ;
+    bgn:personName [ a bgn:PersName ;
+            bgn:name "Lammens",
+                "Maria Wilhelmina" ;
+            rdf:value " " ],
+        "Schreuder, Maria" ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    ore:proxyFor bgn:Person-44750057 ;
+    ore:proxyIn bgn:BioDes-44750057_02 .
+
+bgn:PersonDes-45455235_01 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:place "Vlissingen" ;
+            bgn:type "death" ;
+            bgn:when "1839-05-09" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "baptism" ],
+        [ a bgn:Event ;
+            bgn:place "Naarden" ;
+            bgn:type "birth" ;
+            bgn:when "1759-10-27" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "funeral" ] ;
+    bgn:idno "28227530",
+        "30558741",
+        "38169520",
+        "45455235",
+        "50640586",
+        "bioport" ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    bgn:state [ a bgn:State ;
+            bgn:from bgn:FileDes-73863490_01 ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:to bgn:FileDes-73863490_01 ;
+            bgn:type "floruit" ],
+        [ a bgn:State ;
+            bgn:idno "10" ;
+            bgn:type "category" ;
+            rdf:value "Onderwijs & wetenschappen" ] ;
+    ore:proxyFor bgn:Person-45455235 ;
+    ore:proxyIn bgn:BioDes-45455235_01 .
+
+bgn:PersonDes-45455235_03 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:place "Naarden" ;
+            bgn:type "birth" ;
+            bgn:when "1759-10-27" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "funeral" ],
+        [ a bgn:Event ;
+            bgn:place "Vlissingen" ;
+            bgn:type "death" ;
+            bgn:when "1839-05-01" ],
+        [ a bgn:Event ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:type "baptism" ] ;
+    bgn:idno "30558741",
+        "38169520",
+        "45455235",
+        "50640586",
+        "bioport" ;
+    bgn:personName "Adriaan Uijttenhoven" ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    bgn:state [ a bgn:State ;
+            bgn:idno "4" ;
+            bgn:type "category" ;
+            rdf:value "Kerk en godsdienst" ],
+        [ a bgn:State ;
+            bgn:from bgn:FileDes-73863490_01 ;
+            bgn:place bgn:FileDes-73863490_01 ;
+            bgn:to bgn:FileDes-73863490_01 ;
+            bgn:type "floruit" ] ;
+    ore:proxyFor bgn:Person-45455235 ;
+    ore:proxyIn bgn:BioDes-45455235_03 .
+
+bgn:PersonDes-45455235_04 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:place "Naarden" ;
+            bgn:type "birth" ;
+            bgn:when "1759-10-27" ],
+        [ a bgn:Event ;
+            bgn:place "Vlissingen" ;
+            bgn:type "death" ;
+            bgn:when "1839-05-01" ] ;
+    bgn:idno "1928.xml",
+        "45455235",
+        "blnp" ;
+    bgn:personName "Uyttenhooven, Adriaan" ;
+    ore:proxyFor bgn:Person-45455235 ;
+    ore:proxyIn bgn:BioDes-45455235_04 .
+
+bgn:PersonDes-45455235_06 a bgn:PersonDes,
+        ore:Proxy ;
+    bgn:event [ a bgn:Event ;
+            bgn:date "27 oktober 1760" ;
+            bgn:place "Naarden" ;
+            bgn:type "birth" ;
+            bgn:when "1760-10-27" ],
+        [ a bgn:Event ;
+            bgn:date "8 mei 1839" ;
+            bgn:place "Vlissingen" ;
+            bgn:type "death" ;
+            bgn:when "1839-05-08" ] ;
+    bgn:idno "119553688",
+        "38169520",
+        "45455235",
+        "dbnl",
+        "uytt005" ;
+    bgn:personName "Uyttenhooven, Adriaan " ;
+    bgn:sex bgn:FileDes-73863490_01 ;
+    ore:proxyFor bgn:Person-45455235 ;
+    ore:proxyIn bgn:BioDes-45455235_06 .
+
